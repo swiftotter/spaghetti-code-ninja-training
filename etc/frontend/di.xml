@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Customer\Controller\Account\CreatePost">
-        <plugin name="create-post-plugin"
-                type="SwiftOtter\Spaghetti\Plugin\Controller\Account\CreatePostPlugin"/>
+        <plugin name="SwiftOtter_Spaghetti::TriggerSpecialActionsAfterCustomerRegistration"
+                type="SwiftOtter\Spaghetti\Plugin\TriggerSpecialActionsAfterCustomerRegistration"/>
     </type>
 </config>
